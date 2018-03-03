@@ -20,9 +20,11 @@ namespace UserAndPassword
 {
     class Menu
     {
+        // Objects of class types
+        public UserPass UnP;
         bool quit = false;
 
-        public void Run()
+        public void Run()  //METHOD TO KICK OFF PROCESSING AFTER SPLASH AT MAIN
         {
 
             do
@@ -50,6 +52,7 @@ namespace UserAndPassword
             bool quit = false;
             bool isValid = false;
 
+            //public Menu mainMenu;
             do
             {
                 try
@@ -65,6 +68,9 @@ namespace UserAndPassword
                     {
                         case 1:
                             Console.WriteLine("Insert code to input username and password pair");
+                            UserPass UnP = new UserPass();
+                            UnP.GetUnameAndPass();
+                            
                             break;
 
                         case 2:
