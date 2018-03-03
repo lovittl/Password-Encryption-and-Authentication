@@ -67,18 +67,20 @@ namespace UserAndPassword
                     switch (choice)
                     {
                         case 1:
-                            Console.WriteLine("Insert code to input username and password pair");
+                            
                             UserPass UnP = new UserPass();
                             UnP.GetUnameAndPass();
                             
                             break;
 
                         case 2:
+
                             Console.WriteLine("Insert code to Authenticate a User");
                             break;
 
                         case 3:
                             Console.WriteLine("Exit");
+                            quit = true;
                             break;
 
                         default:
