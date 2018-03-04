@@ -27,8 +27,7 @@ namespace UserAndPassword
             this.pass = Console.ReadLine();
             passList.Add(this.pass);
 
-            Console.WriteLine(usersList);
-            Console.Write(passList);
+           
             Console.Read();
         }
     }
