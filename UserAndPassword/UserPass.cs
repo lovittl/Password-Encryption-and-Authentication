@@ -27,7 +27,22 @@ namespace UserAndPassword
             this.pass = Console.ReadLine();
             passList.Add(this.pass);
 
-           
+
+            //test to check syntax for validation (remove after UserAuth class built)
+            if (usersList.Contains(user))
+            {
+                Console.WriteLine("authenticated");
+            }
+            else
+            {
+                Console.WriteLine("unauthorized");
+            }
+
+
+            //test to print users and passwords
+            Console.WriteLine(usersList);
+            Console.Write(passList);
+
             Console.Read();
         }
     }
