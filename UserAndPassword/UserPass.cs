@@ -31,17 +31,19 @@ namespace UserAndPassword
             //test to check syntax for validation (remove after UserAuth class built)
             if (usersList.Contains(user))
             {
-                Console.WriteLine("authenticated");
+                Console.WriteLine("\nauthenticated\n");
             }
             else
             {
-                Console.WriteLine("unauthorized");
+                Console.WriteLine("unauthorized/n");
             }
 
 
             //test to print users and passwords
             Console.WriteLine(usersList);
-            Console.Write(passList);
+            Console.WriteLine(passList);
+
+            Console.WriteLine("\n\nPress Enter to Return to Main Menu");
 
             Console.Read();
         }

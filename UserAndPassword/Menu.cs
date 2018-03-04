@@ -21,7 +21,7 @@ namespace UserAndPassword
     class Menu
     {
         // Objects of class types
-        public UserPass UnP;
+        //public UserPass UnP;
         bool quit = false;
 
         public void Run()  //METHOD TO KICK OFF PROCESSING AFTER SPLASH AT MAIN
