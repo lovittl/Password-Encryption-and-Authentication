@@ -70,18 +70,21 @@ namespace UserAndPassword
                             
                             UserPass UnP = new UserPass();
                             UnP.GetUnameAndPass();
-                            
+                            //[x]Write a user interface that gives the user three options. Option 1 is to create an account by entering a username and a password.
                             break;
 
                         case 2:
 
-                            Console.WriteLine("Insert code to Authenticate a User");
+                            AuthUser authPass = new AuthUser();
+                            authPass.CheckUserPass();
+                            //[ ]authenticate a user by entering a username and password
                             break;
-
+                            
                         case 3:
                             Console.WriteLine("Exit");
                             quit = true;
                             break;
+                            //[ ]Upon exit, the application will print all username/password pairs previously entered. 
 
                         default:
                             isValid = false;

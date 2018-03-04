@@ -8,11 +8,10 @@ namespace UserAndPassword
 {
     class UserPass
     {
-
-        String user;
-        String pass;
-        List<string> usersList = new List<String>();
-        List<string> passList = new List<string>();
+        public String user;
+        public String pass;
+        public List<string> usersList = new List<String>();
+        public List<string> passList = new List<string>();
 
         public void GetUnameAndPass()
         {
@@ -27,7 +26,7 @@ namespace UserAndPassword
             this.pass = Console.ReadLine();
             passList.Add(this.pass);
 
-           
+            Console.WriteLine("Press enter to return to main menu.");
             Console.Read();
         }
     }
