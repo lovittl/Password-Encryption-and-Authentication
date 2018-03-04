@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace UserAndPassword
 {
-    class UserPass
+    public class UserPass
     {
 
         String user;
         String pass;
-        List<string> usersList = new List<String>();
-        List<string> passList = new List<string>();
+        public List<string> usersList = new List<String>();
+        public List<string> passList = new List<string>();
 
         public void GetUnameAndPass()
         {
@@ -42,7 +42,13 @@ namespace UserAndPassword
             //test to print users and passwords
             Console.WriteLine(usersList);
             Console.WriteLine(passList);
-
+            Console.WriteLine();
+            /*
+            foreach (user in usersList<>)
+            {
+                Console.WriteLine(user);
+            }
+            */
             Console.WriteLine("\n\nPress Enter to Return to Main Menu");
 
             Console.Read();

@@ -23,6 +23,19 @@ namespace UserAndPassword
             
             Console.WriteLine($"\nUser Name: {userAuth}");
             Console.WriteLine($"User Password: {passAuth}");
+
+            if (UnPPair.usersList.Contains(userAuth)) // && (UnPPair.passList.Contains(passAuth)))
+                {
+                    Console.WriteLine("User authenticated");
+                Console.Read();
+                    //Console.WriteLine("Press Enter to Return to Main Menu");
+                } 
+            else
+            {
+                Console.WriteLine("Not Authorized");
+            }
+
+
             Console.WriteLine("Press Enter to Return to Main Menu");
             Console.Read();
 
