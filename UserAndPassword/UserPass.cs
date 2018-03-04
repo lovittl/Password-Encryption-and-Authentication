@@ -26,7 +26,7 @@ namespace UserAndPassword
             Console.WriteLine("Enter Password:");
             this.pass = Console.ReadLine();
             passList.Add(this.pass);
-
+            // STRETCH GOAL:  Simulate encryption of password before 
 
             //test to check syntax for validation (remove after UserAuth class built)
             if (usersList.Contains(user))
