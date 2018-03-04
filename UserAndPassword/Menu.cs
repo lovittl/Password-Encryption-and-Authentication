@@ -74,8 +74,9 @@ namespace UserAndPassword
                             break;
 
                         case 2:
-
-                            Console.WriteLine("Insert code to Authenticate a User");
+                            AuthUser CheckUnP = new AuthUser();
+                            CheckUnP.CheckUserPass();
+                            //Console.WriteLine("Insert code to Authenticate a User");
                             break;
 
                         case 3:
